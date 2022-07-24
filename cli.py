@@ -9,6 +9,11 @@ def write_output(line):
     file1.close()
 
 
+def erase_output_file_content():
+    open('output.txt', 'w').close()
+
+
+erase_output_file_content()
 with open("input.txt", "r") as f:
     lines = f.readlines()
     for line in lines:
